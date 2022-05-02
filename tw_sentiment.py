@@ -44,6 +44,24 @@ def sentimenter(tweet):
 
     return scores 
 
+# Take in a dataframe and find the average score of a set amount of tweets using the sentimenter above 
+
+def av_sentiment(df): 
+    d = len(df.index)
+    neg = 0 
+    neu = 0 
+    pos = 0 
+
+    for tweet in df: 
+        a = sentimenter(tweet)
+        neg += a[0]
+        neu += a[1]
+        pos += a[2]
+        
+    print(neg/d)
+    print(neu/d) 
+    print(pos/d)
+    
     
 
 

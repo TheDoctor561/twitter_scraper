@@ -1,4 +1,4 @@
 from tw_sentiment import sentimenter 
 
 
-print(sentimenter("I'm going to return my metronome"))
+print(sentimenter("How are you chewing so loudly?"))
